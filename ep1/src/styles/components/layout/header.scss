@@ -1,0 +1,12 @@
+:root {
+  --height-header: 9vh;
+}
+
+header {
+  grid-area: header;
+  width: 100vw;
+  height: var(--height-header);
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+}

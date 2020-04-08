@@ -1,0 +1,95 @@
+.covid-19 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .box-input-date {
+    margin-bottom: 1.3rem;
+    width: 100%;
+  }
+
+  p {
+    display: block;
+    width: auto;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+
+    &.title {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    &.count {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    &.count-no-data {
+      font-size: 16px;
+      margin-bottom: 16px;
+      margin-top: 6px;
+    }
+
+    &.new-count {
+      font-size: 15px;
+    }
+  }
+
+  .card-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1.3rem 1rem;
+  }
+
+  .covid-count {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+
+    .count-infect {
+      width: 100%;
+      background-color: rgba(219, 123, 123, 0.945);
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .count-row-bottom {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      & > div {
+        width: calc(33.33% - .6rem);
+      }
+
+      .count-recovered {
+        background-color: rgb(131, 185, 21);
+      }
+
+      .count-hospitalized {
+        background-color: rgb(50, 135, 205);
+      }
+      
+      .count-deaths {
+        background-color: grey;
+      }
+    }
+  }
+}
+
+.form-serch-covid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1.1rem;
+
+  .box-btn {
+    grid-column-end: -1;
+  }
+}

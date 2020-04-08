@@ -1,0 +1,18 @@
+@import './header.scss';
+@import './sidebar.scss';
+
+// .App {
+//   display: grid;
+//   grid-template: 'header header'
+//                  'sidebar main';
+// }
+
+main {
+  grid-area: main;
+  background-color: #efefef;
+  // width: calc(100vw - var(--width-sidebar));
+  // height: calc(100vh - var(--height-header));
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 1.1rem;
+}
