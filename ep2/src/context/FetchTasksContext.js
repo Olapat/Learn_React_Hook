@@ -13,7 +13,7 @@ export const useFetchTasksContext = () => {
   const fetchTasksStart = (name) => {
     setFetchTasks({
       taskName: name,
-      taskLoding: 0,
+      taskLoding: 12,
       taskMessage: null,
       taskStatus: null
     })
