@@ -1,0 +1,24 @@
+.modal-form {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 90vh;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  &.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    background-color: #fff;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+}

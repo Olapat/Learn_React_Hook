@@ -1,0 +1,35 @@
+ul.listview {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 70%;
+
+  li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: .5rem;
+
+    span {
+      display: inline-flex;
+      width: 100%;
+
+      p {
+        width: 70%;
+        margin: 0;
+      }
+
+      label {
+        width: 30%;
+        margin: 0 1rem;
+      }
+
+      &:nth-child(1) {
+        label {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
