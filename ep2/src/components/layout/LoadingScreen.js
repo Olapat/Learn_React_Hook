@@ -1,11 +1,11 @@
-import React from 'react'
-import useAppContext from '../../context'
+import React, { useContext } from 'react'
+import AppContext from '../../context'
 
 const LoadingScreen = () => {
-  const { fetchTask } = useAppContext()
+  const { loading } = useContext(AppContext)
   return (
-    <div className={`loading ${fetchTask.taskLoding ? 'show' : ''}`}>
-      <div class="loader">
+    <div className={`loading ${loading ? 'show' : ''}`}>
+      <div className="loader">
         <span></span>
         <span></span>
         <span></span>

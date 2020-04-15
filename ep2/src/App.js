@@ -1,20 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { AppContext } from './context'
-import { useThemesContext } from './context/ThemeContext'
-import { useFetchTasksContext } from './context/FetchTasksContext'
+import AppContext from './context'
 import AppLayout from './components/layout/AppLayout'
 import routes from './routers'
 
 const App = () => {
+  const [loading, setLoading] = useState(false)
 
-  const [theme, toggleTheme] = useThemesContext()
-  const fetchTask = useFetchTasksContext()
-
-  const valueContext = {
-    fetchTask: fetchTask,
-    theme: { themeColor: theme, toggleTheme }
-  }
+  const valueContext = { loading, setLoading }
 
   return (
     <AppContext.Provider value={valueContext}>

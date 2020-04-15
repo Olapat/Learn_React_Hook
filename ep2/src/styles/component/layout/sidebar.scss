@@ -1,0 +1,13 @@
+aside {
+  grid-area: sidebar;
+  background-color: #eaf1d7;
+  color: #4b474d;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  width: $width-sidebar;
+  min-height: calc(100vh - #{$height-header});
+
+  &.dark {
+    background-color: #4b474d;
+    color: #eaf1d7;
+  }
+}

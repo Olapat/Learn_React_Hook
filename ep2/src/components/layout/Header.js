@@ -1,12 +1,10 @@
 import React from 'react'
-import useAppContext from '../../context'
 
 const Header = () => {
-  const { theme } = useAppContext();
   return (
-    <header className={theme.themeColor}>
+    <header>
       <h1>Header</h1>
-      <button onClick={theme.toggleTheme}>
+      <button>
         toggle
       </button>
     </header>

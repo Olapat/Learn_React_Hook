@@ -1,0 +1,7 @@
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  min-width: calc(100vw - #{$width-sidebar});
+  min-height: calc(100vh - #{$height-header});
+}

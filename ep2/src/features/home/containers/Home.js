@@ -1,22 +1,18 @@
-import React from 'react'
-import useAppContext from '../../../context'
+import React, { useContext } from 'react'
+import AppContext from '../../../context'
 
 const Home = () => {
-  const { fetchTask } = useAppContext()
+  const { setLoading } = useContext(AppContext)
 
-  const startFetchTask = () => {
-    fetchTask.fetchTasksStart('name')
-    setTimeout(() => {
-      fetchTask.fetchTasksClear()
-    }, 3000)
+  const startLoading = () => {
+    setLoading(true)
+    setTimeout(() => { setLoading(false) }, 3000)
   }
 
   return (
     <div className='home'>
       <h1>Home Page</h1>
-      <button onClick={startFetchTask}>
-        start
-      </button>
+      <button onClick={startLoading}>start</button>
     </div>
   )
 }

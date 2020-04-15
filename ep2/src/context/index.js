@@ -1,14 +1,6 @@
-import { createContext, useContext } from 'react'
-import FetchTasksContext from './FetchTasksContext'
-import ThemeContext from './ThemeContext'
 
-const context = {
-  fetchTask: FetchTasksContext,
-  themeContext: ThemeContext
-}
+import { createContext } from 'react'
 
-export const AppContext = createContext(context)
+const AppContext = createContext()
 
-export default () => {
-  return useContext(AppContext)
-}
+export default AppContext

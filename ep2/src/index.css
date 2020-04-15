@@ -17,32 +17,3 @@ code {
   grid-template: 'header header'
                  'sidebar main';
 }
-
-header {
-  grid-area: header;
-}
-
-header.light {
-  background-color: #ffffff;
-  color: #000;
-}
-
-header.dark {
-  background-color: #6e6e6e;
-  color: #ffffff;
-}
-
-aside {
-  grid-area: sidebar;
-}
-
-aside.light {
-  background-color: #eaf1d7;
-  color: #4b474d;
-}
-
-aside.dark {
-  background-color: #4b474d;
-  color: #eaf1d7;
-}
-
