@@ -1,13 +1,18 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import AppContext from './context'
 import AppLayout from './components/layout/AppLayout'
+import AppContext from './context'
 import routes from './routers'
 
 const App = () => {
-  const [loading, setLoading] = useState(false)
+  const [translation, setTranslation] = useState('en')
 
-  const valueContext = { loading, setLoading }
+  const valueContext = {
+    translation: {
+      trans: translation,
+      setTranslation
+    }
+  }
 
   return (
     <AppContext.Provider value={valueContext}>

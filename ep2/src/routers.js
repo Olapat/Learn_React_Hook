@@ -1,4 +1,4 @@
-import { Home } from './features/home/containers'
+import { Home, NewHome } from './features/home/containers'
 import { Form } from './features/form/containers'
 
 const routes = [
@@ -11,6 +11,10 @@ const routes = [
     path: "/form",
     component: Form
   },
+  {
+    path: "/new-home",
+    component: NewHome
+  }
 ]
 
 export default routes
