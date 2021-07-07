@@ -1,0 +1,16 @@
+:root {
+  --width-sidebar: 250px;
+
+  @media (max-width: 900px) {
+    --width-sidebar: 50px;
+  }
+}
+
+aside {
+  grid-area: sidebar;
+  width: var(--width-sidebar);
+}
+
+@media only screen and (max-width: 900px) {
+  
+}

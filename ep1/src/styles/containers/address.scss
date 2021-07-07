@@ -1,0 +1,16 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  min-height: 100%;
+  padding: 1rem;
+  align-items: center;
+}
+
+.address li.list-address {
+  list-style-type: none;
+}
+
+.address ul {
+  padding-left: 0;
+}

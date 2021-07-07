@@ -1,0 +1,25 @@
+@import 'input.scss';
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+
+  label {
+    margin-bottom: 3px;
+  }
+
+  .error-field {
+    color: red;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  &.on-error {
+    input,
+    select {
+      border-color: rgba(212, 44, 44, 0.692);
+      box-shadow: 0px 0px 3px rgba(212, 44, 44, 0.692);
+    }
+  }
+}
